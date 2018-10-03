@@ -124,10 +124,12 @@ while resp != "ai" and resp != "pvp":
 if resp == "ai":
     p1 = 1
     p2 = 0
+    turn = random.randint(0, 1)
     
 elif resp == "pvp":
     p1 = 1
     p2 = 2
+    turn = random.randint(1, 2)
 
 while gameOver == 0:
     nextTurn()
